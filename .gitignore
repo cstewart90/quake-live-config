@@ -1,0 +1,6 @@
+*.pk3
+*.dll
+*.js
+*.log
+qzconfig.cfg
+repconfig.cfg
