@@ -1,6 +1,9 @@
+demos/
+screenshots/
 *.pk3
 *.dll
 *.js
 *.log
+*.pid
 qzconfig.cfg
 repconfig.cfg
