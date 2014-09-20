@@ -1,0 +1,249 @@
+#include "ui/menudef.h"
+
+// RACE HUD
+// 
+// defines from ui_shared.h
+
+{
+  assetGlobalDef {
+    	cursor "ui/assets/3_cursor2"			// cursor	
+    	gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+    	fadeClamp 1.0					// sets the fadeup alpha
+	fadeCycle 1					// how often fade happens in milliseconds
+	fadeAmount 0.1					// amount to adjust alpha per cycle
+
+	shadowX  5					// x amount for shadow offset
+	shadowY  5					// y amount for shadow offset
+	shadowColor 0.1 0.1 0.1 0.25			// shadow color
+
+   	font "fonts/font" 24				// 24 font
+    	smallFont "fonts/smallfont" 16			// 16 font
+    	bigFont "fonts/bigfont" 48			// 48 font
+
+
+  }
+
+
+//	Notification AREA	
+menuDef {
+	name "msgsArea"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE
+	rect 470 4 64 36
+
+    itemdef {
+	    name tourneyMsg
+   	    rect 0 0 32 32
+    	style 1
+        background "sprites/foe2.png"
+   	    visible 1
+        ownerdrawflag CG_SHOW_IF_NOTICE_PRESENT
+	    decoration
+	    backcolor 1 1 1 1.0
+	}
+    itemdef {
+	    name gotMsg
+   	    rect 34 0 32 32
+    	style 1
+        background "sprites/balloon4.png"
+   	    visible 1
+        ownerdrawflag CG_SHOW_IF_MSG_PRESENT
+	    decoration
+	    backcolor 1 1 1 1.0
+	}
+}
+
+//*****TOP LEFT SCORE BOX*****//
+
+menuDef {
+    	name "ScoreFrame"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE	
+    	rect 2 0 32 256
+//Score Frame BG, can be scaled wider if needed to make more room for names
+	itemDef {
+     	name "scoreboxl"
+	rect 0 0 32 64 
+	visible 1
+   	decoration
+	backcolor 1 1 1 0.8
+	style 1
+	background "ui/assets/hud/scoreboxl.tga"
+	}
+	itemDef {
+     	name "scorebox2"
+	rect 32 0 143 64 
+	visible 1
+   	decoration
+	backcolor 1 1 1 0.8
+	style 1
+	background "ui/assets/hud/scoreboxm.tga"
+	}
+	itemDef {
+     	name "scorebox3"
+	rect 175 0 8 64 
+	visible 1
+   	decoration
+	backcolor 1 1 1 0.8
+	style 1
+	background "ui/assets/hud/scoreboxr.tga"
+	}
+//GAMETYPE ICON
+itemDef {
+	name "gameType"
+	rect 6 7 19 19
+	style 0
+	backcolor 1 1 1 1
+	ownerdraw CG_GAME_TYPE_ICON
+	visible 1
+	decoration
+	}	
+//WIN VALUE
+	itemDef {
+      	name "WinLimit"
+      	textalign 1
+        rect 7 37 40 12
+	visible 1
+    	decoration
+	forecolor 0 0 0 1
+	textscale .26
+	ownerdraw CG_CAPFRAGLIMIT 
+	}
+	
+    //GAME TIME
+	
+     itemDef {
+		name "Timer"
+		textalign 0
+		style 0
+		rect 14 60 50 12//201 18 50 12//185 7 14 14
+		visible 1
+		textstyle 3
+		decoration
+		forecolor 1 1 1 0.9
+		textscale .28
+		ownerdraw CG_LEVELTIMER//text "999:99"
+	}
+	itemDef {
+		name "timerIcon"
+		rect -1 47 14 14 
+		visible 1
+		decoration		
+		style 1
+		backcolor 1 1 1 1 
+		background "icons/icon_time.tga"
+	}
+}
+
+
+
+// example for PAT
+// this is the item def for the 1st place text
+menuDef {
+    	name "scores"
+    	fullScreen MENU_FALSE
+    	visible MENU_TRUE	
+    	rect 40 0 120 40
+    itemdef {
+	    name "1stplace"
+	    ownerdraw CG_1ST_PLACE_SCORE
+   	    rect 0 19 136 40
+   	    visible 1
+		textscale .22
+	    decoration
+	}
+
+// example for PAT
+// this is the item def for the 2nd place text
+
+    itemdef {
+	    name "2ndplace"
+	    ownerdraw CG_2ND_PLACE_SCORE
+   	    rect 0 36 136 40
+   	    visible 1
+		textscale .22
+	    decoration
+	}
+}
+
+
+//	graphical obits	
+menuDef {
+	name "obit area"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE
+	rect 3 76 65 12 //190 18 65 12 ***this changes Suicided, killed etc icon +player tag
+
+    itemdef {
+	    name hudObit
+	    ownerdraw CG_PLAYER_OBIT
+   	    rect 0 0 65 12 //0 0 65 12
+   	    visible 1 //1
+	    decoration
+	    textscale .22
+  	    cvarTest "cg_gametype"
+  	    hideCvar { "12" }
+	}
+}
+
+menuDef {
+	name "obit area"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE
+	rect 220 18 65 12 //220 18 65 12
+
+    itemdef {
+	    name hudObit
+	    ownerdraw CG_PLAYER_OBIT
+   	    rect 1 0 65 12 //1 0 65 12
+   	    visible 1 //1
+	    decoration
+	    textscale .22
+  	    cvarTest "cg_gametype"
+  	    showCvar { "12" }
+	}
+}
+
+
+
+////----//// RACE HUD ////----////
+
+menuDef {	
+		name "RaceHUD"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 263 0 115 25
+	
+		itemDef {
+			name "raceTimes"
+			rect 9 31 110 15 //25 34 110 15 
+			visible 1
+			decoration
+			align 0
+			textscale 0.38
+			ownerdraw CG_RACE_TIMES
+			cvarTest "cg_gametype"
+			showCvar { "2" }
+		}
+	}aqua
+
+//	chat area	
+menuDef {
+	name "chat area"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE
+	rect 0 0 32 256
+
+
+    itemdef {
+	    name chatWindow
+	    ownerdraw CG_AREA_NEW_CHAT
+		textscale 0.20 //22
+   	    rect 5 287 634 120
+   	    visible 1
+	    decoration
+	}
+  
+   }
+
+}
