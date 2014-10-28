@@ -35,7 +35,8 @@ wassup.
 		name        "Ammo"
 		fullScreen  MENU_FALSE
 		visible     MENU_TRUE
-		rect        95 453 99 36
+		rect        115 453 99 36
+		widescreen 2
 
 		itemDef {
 			name        "ammoIcon"
@@ -65,7 +66,8 @@ wassup.
 		name        "Player"
 		fullScreen  MENU_FALSE
 		visible     MENU_TRUE
-		rect        256 452 95 36
+		rect        276 452 95 36
+		widescreen 2
 
 		itemDef {
 			name          "healtValue-PQL"
@@ -108,7 +110,8 @@ wassup.
 		name        "Armor"
 		fullScreen  MENU_FALSE
 		visible     MENU_TRUE
-		rect        353 452 95 32
+		rect        373 452 95 32
+		widescreen 2
 
 		itemDef {
 			name          "armorValue"
@@ -142,6 +145,7 @@ wassup.
 		name "caFrame"
 		visible 1
 		rect 520 360 64 48
+		widescreen 2
 
 		itemDef {
 			name "redClanPlayers"
@@ -213,6 +217,7 @@ wassup.
 		fullScreen    MENU_FALSE
 		visible       MENU_TRUE
 		ownerdrawflag CG_SHOW_ANYTEAMGAME
+		widescreen 3
 
 		//*****SCORE BACKGROUNDS*****//
 
@@ -310,6 +315,7 @@ wassup.
 		rect          580 416 60 60
 		fullScreen    MENU_FALSE
 		visible       MENU_TRUE
+		widescreen 3
 
 		itemDef {
 			name          "scoreLimit"
@@ -332,11 +338,12 @@ wassup.
 		fullScreen    MENU_FALSE
 		visible       MENU_TRUE
 		ownerdrawflag CG_SHOW_ANYTEAMGAME
+		widescreen 3
 
 		itemDef {
 			name "BorderFirst"
 			visible 1
-			rect -43 30 52 22
+			rect -42 30 52 22
 			border WINDOW_BORDER_FULL
 			bordersize 2
 			bordercolor 0.8 0.8 0.8 1
@@ -346,7 +353,7 @@ wassup.
 		itemDef {
 			name "BorderSecond"
 			visible 1
-			rect 8 30 50 22
+			rect 9 30 50 22
 			border WINDOW_BORDER_FULL
 			bordersize 2
 			bordercolor 0.8 0.8 0.8 1
@@ -362,6 +369,7 @@ wassup.
 		fullScreen    MENU_FALSE
 		visible       MENU_TRUE
 		ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+		widescreen 3
 
 		//*****SCORE BACKGROUNDS*****//
 
@@ -429,6 +437,7 @@ wassup.
 		fullScreen    MENU_FALSE
 		visible       MENU_TRUE
 		ownerdrawflag CG_SHOW_CTF
+		widescreen 3
 
 		//*****FLAG STATUS ICON*****//
 
@@ -474,6 +483,7 @@ wassup.
     fullScreen MENU_FALSE
     visible MENU_TRUE
     rect 269 25 115 25
+		widescreen 2
 
     itemDef {
       name "raceBackground1"
@@ -546,7 +556,8 @@ wassup.
 		name       "powerup"
 		fullScreen MENU_FALSE
 		visible    MENU_TRUE
-		rect       565 330 74 156
+		rect       565 260 74 156
+		widescreen 3
 
 		itemDef {
 			name      "powerupArea"
@@ -569,6 +580,7 @@ wassup.
 		fullScreen MENU_FALSE
 		visible    MENU_TRUE
 		rect       20 445 32 64
+		widescreen 3
 
 		itemDef {
 			name      "playeritem"
@@ -593,12 +605,13 @@ wassup.
 		name       "playerHasFlag"
 		fullScreen MENU_FALSE
 		visible    MENU_TRUE
-		rect       0 345 48 48
+		rect       216 0 64 64
+		widescreen 2
 
 		itemDef {
 			name      "flag"
 			decoration
-			rect      70 96 35 35
+			rect      70 96 60 60
 			visible   1
 			style     1
 			ownerdraw CG_PLAYER_HASFLAG
@@ -612,6 +625,7 @@ wassup.
 		fullScreen MENU_FALSE
 		visible    MENU_TRUE
 		rect       6 15 160 32
+		widescreen 1
 
 		itemdef {
 			name      "hudObit"
@@ -647,6 +661,7 @@ wassup.
 		rect       270 30 200 75
 		fullScreen MENU_FALSE
 		visible    MENU_TRUE
+		widescreen 2
 
 		itemDef {
 			name      "timerfg"
