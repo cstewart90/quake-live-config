@@ -695,4 +695,61 @@ wassup.
 			ownerdraw  CG_ROUNDTIMER
 		}
 	}
+
+	//*****TIME/MAPNAME/IP*****//
+	menuDef {
+		name "CurrentTime"
+		fullScreen MENU_FALSE
+		visible    MENU_TRUE
+		ownerdrawflag CG_SHOW_IF_WARMUP
+		widescreen 1
+
+		itemDef {
+			name "CurrentTime"
+			textalign 2
+			style 0
+			rect 5 26 50 12
+			visible 1
+			textstyle 3
+			decoration
+			forecolor 1 1 1 1
+			textscale .26
+			ownerdraw CG_LOCALTIME
+		}
+
+		itemDef {
+			name "MapName"
+			textalign 2
+			style 0
+			rect 5 38 50 12
+			visible 1
+			textstyle 3
+			decoration
+			forecolor 1 1 1 1
+			textscale .22
+			ownerdraw CG_MAP_NAME
+
+		}
+	}
+
+	//*****LOCAL TIME*****//
+	menudef {
+		name "mytime"
+		fullScreen MENU_FALSE
+		visible    MENU_TRUE
+		rect 3 477 20 20
+		widescreen 1
+
+		itemDef {
+			name "localtime_text"
+			visible 1
+			rect 0 0 1 1
+			ownerdrawflag CG_SHOW_IF_CHAT_VISIBLE
+			ownerdraw CG_LOCALTIME
+			textscale 0.16
+			forecolor 1 1 1 .6
+			textstyle 3
+			style WINDOW_STYLE_FILLED
+		}
+	}
 }
