@@ -13,6 +13,7 @@ menuDef {
     name "HealthMenu"
     DEFAULTS_MENU
     rect 165 435 100 35
+    widescreen 2
 
     itemDef {
         name "HealthValueShadow"
@@ -45,6 +46,7 @@ menuDef {
     name "AmmoIconMenu"
     DEFAULTS_MENU
     rect 312 426 16 16
+    widescreen 2
 
     itemDef {
         name "AmmoIcon"
@@ -58,6 +60,7 @@ menuDef {
     name "AmmoMenu"
     DEFAULTS_MENU
     rect 285 445 70 25
+    widescreen 2
 
     itemDef {
         name "AmmoValueShadow"
@@ -87,6 +90,7 @@ menuDef {
     name "ArmorMenu"
     DEFAULTS_MENU
     rect 375 435 100 35
+    widescreen 2
 
     itemDef {
         name "ArmorValueShadow"
@@ -121,6 +125,7 @@ menuDef {
     rect       420 160 200 75
     fullScreen MENU_FALSE
     visible    MENU_TRUE
+    widescreen 3
 
     itemDef {
         name      "timerfg"
@@ -161,6 +166,7 @@ menuDef {
     DEFAULTS_MENU
     rect 580 425 60 60
     ownerdrawFlag CG_SHOW_ANYNONTEAMGAME
+    widescreen 3
 
     itemDef {
         DEFAULTS_ITEM
@@ -244,6 +250,7 @@ menuDef {
     DEFAULTS_MENU
     rect 580 425 60 60
     ownerdrawFlag CG_SHOW_ANYTEAMGAME
+    widescreen 3
 
     itemDef {
         DEFAULTS_ITEM
@@ -324,6 +331,7 @@ menuDef {
     rect 580 425 60 60
     DEFAULTS_MENU
     ownerdrawflag CG_SHOW_CTF
+    widescreen 3
 
     itemDef {
         name "red1stredflag"
@@ -363,6 +371,7 @@ menuDef {
     name "ScoreBoardBorders"
     DEFAULTS_MENU
     rect 580 425 60 60
+    widescreen 3
 
     itemDef {
         DEFAULTS_ITEM
@@ -388,6 +397,7 @@ menuDef {
     name "caFrame"
     DEFAULTS_MENU
     rect 520 374 64 48
+    widescreen 2
 
     itemDef {
         name "redClanPlayers"
@@ -451,6 +461,7 @@ menuDef {
     name "PowerupMenu"
     DEFAULTS_MENU
     rect 570 240 50 80
+    widescreen 3
 
     itemDef {
         name "powerupArea"
@@ -467,6 +478,7 @@ menuDef {
     name "PickupsMenu"
     DEFAULTS_MENU
     rect 4 435 385 32
+    widescreen 1
 
     itemDef {
         name "playeritem"
@@ -488,6 +500,7 @@ menuDef {
     name "FLAG warnings"
     DEFAULTS_MENU
     rect 250 23 120 40
+    widescreen 3
 
     itemDef {
         name "textYEAHshadow"
@@ -543,6 +556,7 @@ menuDef {
     name "playerHasFlag"
     DEFAULTS_MENU
     rect 0 0 80 80
+    widescreen 2
 
     itemDef {
         name "flag"
@@ -570,6 +584,7 @@ menuDef {
     name "Frag"
     DEFAULTS_MENU
     rect 4 14 160 32
+    widescreen 1
 
     itemdef {
         name "who fragged who"
@@ -585,6 +600,7 @@ menuDef {
     name "ChatAreaMenu"
     DEFAULTS_MENU
     rect 0 0 32 256
+    widescreen 1
 
     itemdef {
         name chatWindow
@@ -599,6 +615,7 @@ menuDef {
     name "CurrentTime"
     DEFAULTS_MENU
     ownerdrawflag CG_SHOW_IF_WARMUP
+    widescreen 1
 
     itemDef {
         name "CurrentTime"
@@ -639,11 +656,12 @@ menuDef {
     }
 }
 
-//*****LOCAL TIME*****//
+//*****LOCAL TIME WHEN CHAT OPEN*****//
 menudef {
     name "mytime"
     DEFAULTS_MENU
     rect 3 477 20 20
+    widescreen 1
 
     itemDef {
         name "localtime_text"
