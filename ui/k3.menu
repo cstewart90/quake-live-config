@@ -460,7 +460,7 @@ menuDef {
 menuDef {
     name "PowerupMenu"
     DEFAULTS_MENU
-    rect 570 240 50 80
+    rect 560 240 50 80
     widescreen 3
 
     itemDef {
