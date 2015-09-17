@@ -12,7 +12,7 @@
 menuDef {
     name "HealthMenu"
     DEFAULTS_MENU
-    rect 165 435 100 35
+    rect 165 438 100 35
     widescreen 2
 
     itemDef {
@@ -45,7 +45,7 @@ menuDef {
 menuDef {
     name "AmmoIconMenu"
     DEFAULTS_MENU
-    rect 312 426 16 16
+    rect 312 429 16 16
     widescreen 2
 
     itemDef {
@@ -59,7 +59,7 @@ menuDef {
 menuDef {
     name "AmmoMenu"
     DEFAULTS_MENU
-    rect 285 445 70 25
+    rect 285 448 70 25
     widescreen 2
 
     itemDef {
@@ -89,7 +89,7 @@ menuDef {
 menuDef {
     name "ArmorMenu"
     DEFAULTS_MENU
-    rect 375 435 100 35
+    rect 375 438 100 35
     widescreen 2
 
     itemDef {
@@ -164,7 +164,7 @@ menuDef {
 //*****SCOREBOXES - DUEL/FFA*****//
 menuDef {
     DEFAULTS_MENU
-    rect 580 425 60 60
+    rect 580 428 60 60
     ownerdrawFlag CG_SHOW_ANYNONTEAMGAME
     widescreen 3
 
@@ -248,7 +248,7 @@ menuDef {
 //*****TEAM SCOREBOXES*****//
 menuDef {
     DEFAULTS_MENU
-    rect 580 425 60 60
+    rect 580 428 60 60
     ownerdrawFlag CG_SHOW_ANYTEAMGAME
     widescreen 3
 
@@ -328,7 +328,7 @@ menuDef {
 //*****FLAG STATUS*****//
 menuDef {
     name "FlagStatusMenu"
-    rect 580 425 60 60
+    rect 580 428 60 60
     DEFAULTS_MENU
     ownerdrawflag CG_SHOW_CTF
     widescreen 3
@@ -370,7 +370,7 @@ menuDef {
 menuDef {
     name "ScoreBoardBorders"
     DEFAULTS_MENU
-    rect 580 425 60 60
+    rect 580 428 60 60
     widescreen 3
 
     itemDef {
@@ -396,7 +396,7 @@ menuDef {
 menuDef {
     name "caFrame"
     DEFAULTS_MENU
-    rect 520 374 64 48
+    rect 519 374 64 48
     widescreen 2
 
     itemDef {
