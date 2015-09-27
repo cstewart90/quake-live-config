@@ -3,10 +3,8 @@
 #define RED 1 0 0 0.3
 #define BLUE 0 0 1 0.3
 #define GREEN 0 1 0 0.3
-
 #define DEFAULTS_ITEM decoration visible 1
 #define DEFAULTS_MENU visible 1
-
 
 //*****HEALTH*****//
 menuDef {
@@ -135,6 +133,7 @@ menuDef {
         backcolor 0 0.5 1 0.4
         style     1
     }
+
     itemDef {
         name       "Timer"
         decoration
@@ -147,6 +146,7 @@ menuDef {
         textscale  0.8
         ownerdraw  CG_LEVELTIMER
     }
+
     itemDef {
         name       "roundTimer"
         decoration
