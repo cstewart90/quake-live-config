@@ -3,14 +3,16 @@
 #define RED 1 0 0 0.3
 #define BLUE 0 0 1 0.3
 #define GREEN 0 1 0 0.3
+
 #define DEFAULTS_ITEM decoration visible 1
 #define DEFAULTS_MENU visible 1
+
 
 //*****HEALTH*****//
 menuDef {
     name "HealthMenu"
     DEFAULTS_MENU
-    rect 165 438 100 35
+    rect 165 425 100 35
     widescreen 2
 
     itemDef {
@@ -57,7 +59,7 @@ menuDef {
 menuDef {
     name "AmmoMenu"
     DEFAULTS_MENU
-    rect 285 448 70 25
+    rect 294 442 70 25
     widescreen 2
 
     itemDef {
@@ -87,7 +89,7 @@ menuDef {
 menuDef {
     name "ArmorMenu"
     DEFAULTS_MENU
-    rect 375 438 100 35
+    rect 375 425 100 35
     widescreen 2
 
     itemDef {
@@ -133,7 +135,6 @@ menuDef {
         backcolor 0 0.5 1 0.4
         style     1
     }
-
     itemDef {
         name       "Timer"
         decoration
@@ -146,7 +147,6 @@ menuDef {
         textscale  0.8
         ownerdraw  CG_LEVELTIMER
     }
-
     itemDef {
         name       "roundTimer"
         decoration
