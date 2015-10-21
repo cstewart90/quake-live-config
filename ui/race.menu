@@ -246,4 +246,69 @@
             decoration
         }
     }
+
+    //*****TIME/MAPNAME*****//
+    menuDef {
+        name "CurrentTime"
+        visible 1
+        ownerdrawflag CG_SHOW_IF_WARMUP
+        widescreen 3
+
+        itemDef {
+            name "CurrentTime"
+            textalign 2
+            style 0
+            rect 490 16 50 12
+            visible 1
+            textstyle 3
+            decoration
+            forecolor 1 1 1 1
+            textscale .26
+            ownerdraw CG_LOCALTIME
+        }
+
+        itemDef {
+            name "MapName"
+            textalign 2
+            style 0
+            rect 490 28 50 12
+            visible 1
+            textstyle 3
+            decoration
+            forecolor 1 1 1 1
+            textscale .22
+            ownerdraw CG_MAP_NAME
+        }
+
+        itemDef {
+            type ITEM_TYPE_NUMERICFIELD
+            text ""
+            cvar "cl_currentserveraddress"
+            rect 490 40 50 12
+            textscale .22
+            forecolor 1 1 1 1
+            visible 1
+            textstyle 3
+        }
+    }
+
+    //*****LOCAL TIME WHEN CHAT OPEN*****//
+    menudef {
+        name "mytime"
+        visible 1
+        rect 3 477 20 20
+        widescreen 1
+
+        itemDef {
+            name "localtime_text"
+            decoration visible 1
+            rect 0 0 1 1
+            ownerdrawflag CG_SHOW_IF_CHAT_VISIBLE
+            ownerdraw CG_LOCALTIME
+            textscale 0.16
+            forecolor 1 1 1 .6
+            textstyle 3
+            style WINDOW_STYLE_FILLED
+        }
+    }
 }
