@@ -5,5 +5,8 @@ screenshots/
 *.js
 *.log
 *.pid
+*.txt
+gameend.cfg
+gamestart.cfg
 qzconfig.cfg
 repconfig.cfg
