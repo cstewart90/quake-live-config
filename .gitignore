@@ -8,5 +8,6 @@ screenshots/
 *.txt
 gameend.cfg
 gamestart.cfg
+ibounce_on.cfg
 qzconfig.cfg
 repconfig.cfg
