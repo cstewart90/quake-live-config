@@ -1,8 +1,7 @@
-#include "ui/menudef.h"
-
 // RACE HUD
-//
 // defines from ui_shared.h
+
+#include "ui/menudef.h"
 
 {
     assetGlobalDef {
@@ -21,7 +20,7 @@
         bigFont "fonts/bigfont" 48               // 48 font
     }
 
-    // Notification AREA
+    // notification area
     menuDef {
         name "msgsArea"
         fullScreen MENU_FALSE
@@ -52,7 +51,7 @@
         }
     }
 
-    //*****TOP LEFT SCORE BOX*****//
+    // top left scorebox
     menuDef {
         name "ScoreFrame"
         fullScreen MENU_FALSE
@@ -60,7 +59,7 @@
         rect 2 0 32 256
         widescreen 1
 
-        // Score Frame BG, can be scaled wider if needed to make more room for names
+        // score Frame BG, can be scaled wider if needed to make more room for names
         itemDef {
              name "scoreboxl"
             rect 0 0 32 64
@@ -91,7 +90,7 @@
             background "ui/assets/hud/scoreboxr.tga"
         }
 
-        // GAMETYPE ICON
+        // gametype icon
         itemDef {
             name "gameType"
             rect 6 7 19 19
@@ -102,7 +101,7 @@
             decoration
         }
 
-        // WIN VALUE
+        // win limit
         itemDef {
             name "WinLimit"
             textalign 1
@@ -114,18 +113,18 @@
             ownerdraw CG_CAPFRAGLIMIT
         }
 
-        // GAME TIME
-         itemDef {
+        // game time
+        itemDef {
             name "Timer"
             textalign 0
             style 0
-            rect 14 60 50 12//201 18 50 12//185 7 14 14
+            rect 14 60 50 12 // 201 18 50 12//185 7 14 14
             visible 1
             textstyle 3
             decoration
             forecolor 1 1 1 0.9
             textscale .28
-            ownerdraw CG_LEVELTIMER//text "999:99"
+            ownerdraw CG_LEVELTIMER // text "999:99"
         }
 
         itemDef {
@@ -174,14 +173,14 @@
         name "obit area"
         fullScreen MENU_FALSE
         visible MENU_TRUE
-        rect 3 76 65 12 //190 18 65 12 ***this changes Suicided, killed etc icon +player tag
+        rect 3 76 65 12 // 190 18 65 12
         widescreen 1
 
         itemdef {
             name hudObit
             ownerdraw CG_PLAYER_OBIT
-            rect 0 0 65 12 //0 0 65 12
-            visible 1 //1
+            rect 0 0 65 12 // 0 0 65 12
+            visible 1 // 1
             decoration
             textscale .22
             cvarTest "cg_gametype"
@@ -193,14 +192,14 @@
         name "obit area"
         fullScreen MENU_FALSE
         visible MENU_TRUE
-        rect 220 18 65 12 //220 18 65 12
+        rect 220 18 65 12 // 220 18 65 12
         widescreen 1
 
         itemdef {
             name hudObit
             ownerdraw CG_PLAYER_OBIT
-            rect 1 0 65 12 //1 0 65 12
-            visible 1 //1
+            rect 1 0 65 12 // 1 0 65 12
+            visible 1 // 1
             decoration
             textscale .22
             cvarTest "cg_gametype"
@@ -208,7 +207,7 @@
         }
     }
 
-    ////----//// RACE HUD ////----////
+    // race hud
     menuDef {
         name "RaceHUD"
         fullScreen MENU_FALSE
@@ -218,7 +217,7 @@
 
         itemDef {
             name "raceTimes"
-            rect 9 31 110 15 //25 34 110 15
+            rect 9 31 110 15 // 25 34 110 15
             visible 1
             decoration
             align 0
@@ -229,7 +228,7 @@
         }
     }
 
-    //    chat area
+    // chat
     menuDef {
         name "chat area"
         fullScreen MENU_FALSE
@@ -240,14 +239,14 @@
         itemdef {
             name chatWindow
             ownerdraw CG_AREA_NEW_CHAT
-            textscale 0.20 //22
+            textscale 0.20 // 22
             rect 5 287 634 120
             visible 1
             decoration
         }
     }
 
-    //*****LOCAL TIME WHEN CHAT OPEN*****//
+    // local time when chat open
     menudef {
         name "mytime"
         visible 1
