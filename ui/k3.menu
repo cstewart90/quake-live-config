@@ -122,19 +122,11 @@ menuDef {
 //*****TIMER*****//
 menuDef {
     name       "timerFrame"
-    rect       420 160 200 75
+    rect       277 35 200 75
     fullScreen MENU_FALSE
     visible    MENU_TRUE
-    widescreen 3
+    widescreen 2
 
-    itemDef {
-        name      "timerfg"
-        decoration
-        rect      -20 -32 130 36
-        visible   1
-        backcolor 0 0.5 1 0.4
-        style     1
-    }
     itemDef {
         name       "Timer"
         decoration
