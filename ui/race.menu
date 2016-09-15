@@ -207,6 +207,24 @@
         }
     }
 
+    // powerups
+    menuDef {
+        name "PowerupMenu"
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 550 5 20 20
+        widescreen 3
+
+        itemDef {
+            name "powerupArea"
+            visible 1
+            rect 0 0 20 20
+            special 4
+            ownerdraw CG_AREA_POWERUP
+            align HUD_VERTICAL
+        }
+    }
+
     // race hud
     menuDef {
         name "RaceHUD"
@@ -230,7 +248,7 @@
 
     // chat
     menuDef {
-        name "chat area"
+        name "ChatAreaMenu"
         fullScreen MENU_FALSE
         visible MENU_TRUE
         rect 0 0 32 256
@@ -238,11 +256,9 @@
 
         itemdef {
             name chatWindow
-            ownerdraw CG_AREA_NEW_CHAT
-            textscale 0.20 // 22
-            rect 5 287 634 120
             visible 1
-            decoration
+            rect 5 287 634 120
+            ownerdraw CG_AREA_NEW_CHAT
         }
     }
 
