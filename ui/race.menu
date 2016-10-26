@@ -225,6 +225,22 @@
         }
     }
 
+    // items
+    menuDef {
+        name "PickupsMenu"
+        fullScreen MENU_FALSE
+        visible MENU_TRUE
+        rect 4 435 385 32
+        widescreen 1
+
+        itemDef {
+            name "playeritem"
+            visible 1
+            rect 0 7 28 28
+            ownerdraw CG_PLAYER_ITEM
+        }
+    }
+    
     // race hud
     menuDef {
         name "RaceHUD"
